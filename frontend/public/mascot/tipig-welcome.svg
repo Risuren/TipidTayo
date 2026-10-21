@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pigBodyWelcome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="goldCoinWelcome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="softShadowWelcome" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="100" cy="180" rx="65" ry="12" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Left Ear -->
+  <path d="M 50 65 C 35 35 60 25 75 48 Z" fill="#388E3C" filter="url(#softShadowWelcome)"/>
+  <path d="M 55 60 C 45 42 60 35 70 50 Z" fill="#A5D6A7"/>
+
+  <!-- Right Ear (Perked up waving) -->
+  <path d="M 150 62 C 168 30 145 20 128 45 Z" fill="#388E3C" filter="url(#softShadowWelcome)"/>
+  <path d="M 146 58 C 158 38 142 32 133 47 Z" fill="#A5D6A7"/>
+
+  <!-- Main Chubby Body -->
+  <circle cx="100" cy="110" r="68" fill="url(#pigBodyWelcome)" filter="url(#softShadowWelcome)"/>
+
+  <!-- Coin Slot on Top -->
+  <rect x="88" y="44" width="24" height="6" rx="3" fill="#1B4332"/>
+
+  <!-- Cheerful Sparkle Eyes (Big, welcoming) -->
+  <ellipse cx="76" cy="95" rx="7" ry="9" fill="#1B4332"/>
+  <circle cx="74" cy="92" r="3" fill="#FFFFFF"/>
+  <ellipse cx="124" cy="95" rx="7" ry="9" fill="#1B4332"/>
+  <circle cx="122" cy="92" r="3" fill="#FFFFFF"/>
+
+  <!-- Rosy Cheeks -->
+  <circle cx="62" cy="112" r="10" fill="#FF8A80" opacity="0.6"/>
+  <circle cx="138" cy="112" r="10" fill="#FF8A80" opacity="0.6"/>
+
+  <!-- Snout -->
+  <ellipse cx="100" cy="116" rx="24" ry="17" fill="#81C784" stroke="#2E7D32" stroke-width="2"/>
+  <!-- Nostrils -->
+  <ellipse cx="92" cy="116" rx="4" ry="6" fill="#1B4332"/>
+  <ellipse cx="108" cy="116" rx="4" ry="6" fill="#1B4332"/>
+
+  <!-- Wide Happy Open Smile -->
+  <path d="M 88 136 Q 100 152 112 136 Z" fill="#1B4332"/>
+  <path d="M 94 140 Q 100 147 106 140 Z" fill="#FF8A80"/>
+
+  <!-- Left Hand / Trotter on Hip -->
+  <ellipse cx="44" cy="122" rx="10" ry="14" fill="#2E7D32" transform="rotate(20 44 122)"/>
+
+  <!-- Right Hand / Trotter WAVING HELLO! -->
+  <g transform="translate(150, 80) rotate(-25)">
+    <ellipse cx="12" cy="12" rx="12" ry="18" fill="#388E3C" filter="url(#softShadowWelcome)"/>
+    <circle cx="12" cy="22" r="10" fill="#81C784"/>
+    <!-- Motion wave lines -->
+    <path d="M 28 0 Q 32 8 28 16" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 34 -4 Q 40 8 34 20" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Little Front Feet -->
+  <ellipse cx="78" cy="172" rx="14" ry="9" fill="#2E7D32"/>
+  <ellipse cx="122" cy="172" rx="14" ry="9" fill="#2E7D32"/>
+</svg>

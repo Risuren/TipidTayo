@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pigBodyCeleb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="goldTrophy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="softShadowCeleb" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="100" cy="180" rx="65" ry="12" fill="#E2E8F0" opacity="0.6"/>
+
+  <!-- Celebratory Stars in Background -->
+  <path d="M 40 40 L 43 48 L 51 51 L 43 54 L 40 62 L 37 54 L 29 51 L 37 48 Z" fill="#FBBF24"/>
+  <path d="M 160 42 L 163 49 L 170 51 L 163 53 L 160 60 L 157 53 L 150 51 L 157 49 Z" fill="#FBBF24"/>
+  <path d="M 100 24 L 102 30 L 108 32 L 102 34 L 100 40 L 98 34 L 92 32 L 98 30 Z" fill="#F59E0B"/>
+
+  <!-- Left Ear -->
+  <path d="M 50 65 C 35 35 60 25 75 48 Z" fill="#388E3C" filter="url(#softShadowCeleb)"/>
+  <path d="M 55 60 C 45 42 60 35 70 50 Z" fill="#A5D6A7"/>
+
+  <!-- Right Ear -->
+  <path d="M 150 65 C 165 35 140 25 125 48 Z" fill="#388E3C" filter="url(#softShadowCeleb)"/>
+  <path d="M 145 60 C 155 42 140 35 130 50 Z" fill="#A5D6A7"/>
+
+  <!-- Main Body -->
+  <circle cx="100" cy="110" r="68" fill="url(#pigBodyCeleb)" filter="url(#softShadowCeleb)"/>
+
+  <!-- Coin Slot on Top -->
+  <rect x="88" y="44" width="24" height="6" rx="3" fill="#1B4332"/>
+
+  <!-- Joyful Curved Eyes (Squinting with Happiness ^_^) -->
+  <path d="M 66 94 Q 76 84 86 94" fill="none" stroke="#1B4332" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 114 94 Q 124 84 134 94" fill="none" stroke="#1B4332" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Rosy Cheeks -->
+  <circle cx="60" cy="110" r="11" fill="#FF8A80" opacity="0.65"/>
+  <circle cx="140" cy="110" r="11" fill="#FF8A80" opacity="0.65"/>
+
+  <!-- Snout -->
+  <ellipse cx="100" cy="116" rx="24" ry="17" fill="#81C784" stroke="#2E7D32" stroke-width="2"/>
+  <!-- Nostrils -->
+  <ellipse cx="92" cy="116" rx="4" ry="6" fill="#1B4332"/>
+  <ellipse cx="108" cy="116" rx="4" ry="6" fill="#1B4332"/>
+
+  <!-- Wide Joyful Laughing Mouth -->
+  <path d="M 86 136 Q 100 156 114 136 Z" fill="#1B4332"/>
+  <path d="M 92 142 Q 100 151 108 142 Z" fill="#FF8A80"/>
+
+  <!-- Golden Winner's Trophy (Held Proudly in Center) -->
+  <g transform="translate(82, 90)" filter="url(#softShadowCeleb)">
+    <!-- Cup -->
+    <path d="M 4 8 H 32 V 22 C 32 30 24 36 18 36 C 12 36 4 30 4 22 Z" fill="url(#goldTrophy)" stroke="#78350F" stroke-width="1.5"/>
+    <!-- Handles -->
+    <path d="M 4 12 C -4 12 -4 24 4 24" fill="none" stroke="#B45309" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 32 12 C 40 12 40 24 32 24" fill="none" stroke="#B45309" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Stem & Base -->
+    <rect x="15" y="36" width="6" height="8" fill="#D97706"/>
+    <rect x="8" y="44" width="20" height="7" rx="2" fill="#78350F"/>
+    <!-- Star on Cup -->
+    <path d="M 18 14 L 19.5 18 L 24 18.5 L 20.5 21.5 L 21.5 26 L 18 23.5 L 14.5 26 L 15.5 21.5 L 12 18.5 L 16.5 18 Z" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Little Front Feet -->
+  <ellipse cx="78" cy="172" rx="14" ry="9" fill="#2E7D32"/>
+  <ellipse cx="122" cy="172" rx="14" ry="9" fill="#2E7D32"/>
+</svg>
