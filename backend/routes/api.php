@@ -18,6 +18,28 @@ use App\Http\Controllers\CommunityTipController;
 |--------------------------------------------------------------------------
 */
 
+// System Health & Database Diagnostic Route
+Route::get('/health', function () {
+    try {
+        \Illuminate\Support\Facades\DB::connection()->getPdo();
+        $dbName = \Illuminate\Support\Facades\DB::connection()->getDatabaseName();
+        $tables = \Illuminate\Support\Facades\DB::select('SHOW TABLES');
+        return response()->json([
+            'status' => 'ok',
+            'database' => 'connected',
+            'database_name' => $dbName,
+            'tables_count' => count($tables),
+            'tables' => $tables,
+        ]);
+    } catch (\Throwable $e) {
+        return response()->json([
+            'status' => 'error',
+            'database' => 'connection_failed',
+            'message' => $e->getMessage(),
+        ], 500);
+    }
+});
+
 // Public Authentication Routes
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login'])->name('login');
