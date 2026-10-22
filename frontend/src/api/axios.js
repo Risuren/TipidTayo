@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Detect whether the user opened the app via 'localhost' or '127.0.0.1'
 const host = window.location.hostname === '127.0.0.1' ? '127.0.0.1' : 'localhost';
-const backendBase = `http://${host}:8000`;
+const backendBase = (import.meta.env.VITE_API_URL || `http://${host}:8000`).replace(/\/+$/, '');
 
 const api = axios.create({
   baseURL: `${backendBase}/api`,
