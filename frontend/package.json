@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@rolldown/binding-win32-x64-msvc": "^1.2.14",
     "axios": "^1.20.0",
     "canvas-confetti": "^1.9.4",
     "framer-motion": "^14.4.0",
